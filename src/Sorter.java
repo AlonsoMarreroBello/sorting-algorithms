@@ -6,8 +6,10 @@ public class Sorter {
   }
 
   public static void quickSort(int array[], int start, int end) {
-    if (start >= end)
-      return;
+    if (start >= end) {
+        return;
+    }
+    
     int pivot = array[start];
     int left = start + 1;
     int right = end;
